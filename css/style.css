@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+@font-face{
+    font-family: 'lato medium';
+    src: url('../fonts/Lato-MediumItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+body{
+    background-color: #2e2f31;
+}
+header{
+    max-width: 1600px;
+    height: 1065px;
+    margin: 0 auto 0;
+    background-image: url('../images/1.jpg');
+    background-size: 1600px 1065px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+.container-bg-gradient{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75)
+}
+.header-nav-panel{
+    max-width: 1200px;
+    min-height: 90px;
+    margin: 0 auto 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 15%);
+}
+.logo-company{
+    box-sizing: border-box;
+    float: left;
+    padding: 31px 0 0 0;
+    height: 90px;
+    width: 140px;
+}
+.header-nav-panel nav{
+    display: table;
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+    width: 52%;
+}
+.header-nav-panel ul{
+    display: table-cell;
+    text-align: justify;
+    line-height: 0;
+}
+.header-nav-panel ul:after {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+}
+.header-nav-panel ul li{
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+}
+.header-nav-panel ul li a{
+    padding-bottom: 36.2px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-nav-panel ul a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+.main-title{
+    height: 155px;
+    margin: 346px auto 475px;
+    padding: 0 3px 0 3px;
+    text-align: center;
+}
+.main-title p:not(:first-child){
+    font-size: 32px;
+    font-style: italic;
+    font-family: Georgia, cursive, 'Times New Roman', Times, serif;
+}
+.main-title p:first-child{
+    font-size: 72px;
+    font-weight: bold;
+    font-family: Myriad Pro, sans-serif;
+}
