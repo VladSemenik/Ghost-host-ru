@@ -4,10 +4,16 @@
 
 }
 @font-face{
-    font-family: 'lato medium';
+    font-family: 'lato medium italic';
     src: url('../fonts/Lato-MediumItalic.ttf');
     font-weight: normal;
     font-style: italic;
+}
+@font-face{
+    font-family: 'lato medium';
+    src: url('../fonts/Lato-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 body{
     background-color: #2e2f31;
@@ -46,6 +52,7 @@ header{
     float: right;
     text-align: center;
     width: 52%;
+    font-family: 'lato medium', lato, sans-serif;
 }
 .header-nav-panel ul{
     display: table-cell;
