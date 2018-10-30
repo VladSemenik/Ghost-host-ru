@@ -200,34 +200,49 @@ header{
 #name-new-domain-form{
     margin-top: 49px;
 }
-.content-buy-domain input {
+.containe-select-input-border {
+    position: relative;
     box-sizing: border-box;
     float: left;
-    width: 88%;
-    height: 50px;
+    max-height: 50px;
+    width: 100%;
     border: 1px solid #d9d9d9;
-    border-right: 0px;
+}
+.content-buy-domain input {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 95px;
+    height: 48px;
+    width: 50%;
+    border-width: 0px;
     font-size: 21px;
     color: rgba(134, 134, 134, 255);
     font-family: 'lato semibold', 'AdobeInvisFont', 'MyriadPro-Regular';
     text-align: left;
+    outline: 0;
 }
-.select-containe {
-    float: left;
-    height: 50px;
-    width: 12%;
-}
-.content-buy-domain select {
+.containe-select-input-border select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     box-sizing: border-box;
     float: right;
-    border: 1px solid #d9d9d9;
-    border-left: 0;
-    height: 50px;
-    width: 100%;
+    border-width: 0px;
+    height: 48px;
+    width: 86px;
     font-size: 22px;
     color: rgba(203, 203, 203, 255);
     font-family: 'lato semibold', 'lato regular', 'lato bold', 'AdobeInvisFont', 'MyriadPro-Regular';
     background-color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+}
+.help-div-select {
+    position: relative;
+    float: right;
+    height: 48px;
+    width: 86px;
 }
 .cf::before, .cf::after {
     content: '';
@@ -235,4 +250,49 @@ header{
 }
 .cf::after {
     clear: both;
+}
+.cf-vertical-line::before, .cf-vertical-line::after {
+    display: table;
+    position: absolute;
+    border: 0px;
+    font-size: 22px;
+    color: rgba(203, 203, 203, 255);
+    font-family: 'lato semibold', 'lato regular', 'lato bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    vertical-align: middle;
+}
+.cf-vertical-line::before {
+    content: 'www.';
+    top: 9px;
+    left: 1.68%;
+    padding-right: 10px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    height: 32px;
+    padding-right: 10px;
+}
+.cf-vertical-line::after {
+    content: '';
+    top: 9px;
+    right: 86px;
+    height: 32px;
+    border-left: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+}
+.help-div-select::before {
+    content: '>';
+    display: table;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 8px;
+    z-index: 2;
+    color: rgba(203, 203, 203, 255);
+    font-family: 'lato semibold', 'lato regular', 'lato bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 48px;
+    cursor: pointer;
+    pointer-events: none;
 }
