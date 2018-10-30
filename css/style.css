@@ -24,6 +24,24 @@ a {
     font-weight: bold;
     font-style: normal;
 }
+@font-face{
+    font-family: 'lato heavy';
+    src: url('../fonts/Lato-Heavy.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'lato semibold';
+    src: url('../fonts/Lato-Semibold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+        font-family: 'lato regular';
+        src: url('../fonts/Lato-Regular.ttf');
+        font-weight: bold;
+        font-style: normal;
+}
 body{
     background-color: #000;
 }
@@ -150,4 +168,71 @@ header{
     display: inline-block;
     line-height: 123px;
     height: 90px;
+}
+/*section first - domain*/
+.packages-and-price {
+    position: relative;
+    top: 105px;
+}
+.domain {
+    height: 578px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.content-buy-domain {
+    margin: 0 auto 90px;
+    padding-top: 90px;
+    max-width: 892px;
+}
+.content-buy-domain h2 {
+    text-align: center;
+    font-size: 32px;
+    color: rgba(56, 55, 55, 255);
+    font-family: 'lato heavy', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+.content-buy-domain p {
+    margin-top: 27px;
+    font-size: 22px;
+    text-align: justify;
+    color: rgba(162, 162, 162, 255);
+    font-family: 'Montserrat-UltraLight', 'AdobeInvisFont', 'MyriadPro-Regular';
+}
+#name-new-domain-form{
+    margin-top: 49px;
+}
+.content-buy-domain input {
+    box-sizing: border-box;
+    float: left;
+    width: 88%;
+    height: 50px;
+    border: 1px solid #d9d9d9;
+    border-right: 0px;
+    font-size: 21px;
+    color: rgba(134, 134, 134, 255);
+    font-family: 'lato semibold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    text-align: left;
+}
+.select-containe {
+    float: left;
+    height: 50px;
+    width: 12%;
+}
+.content-buy-domain select {
+    box-sizing: border-box;
+    float: right;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    height: 50px;
+    width: 100%;
+    font-size: 22px;
+    color: rgba(203, 203, 203, 255);
+    font-family: 'lato semibold', 'lato regular', 'lato bold', 'AdobeInvisFont', 'MyriadPro-Regular';
+    background-color: #ffffff;
+}
+.cf::before, .cf::after {
+    content: '';
+    display: table;
+}
+.cf::after {
+    clear: both;
 }
